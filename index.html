@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pronostico del tiempo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ 
+    <div id="searchContainer">
+        <input type="text" class="searchControl" placeholder="Nombre de la ciudad o CP" id="searchInput">
+        <button class="searchcontrol" id="seachbtn">Buscar</button>
+
+    </div>
+    <div id="weatherContainer">
+        <div id="weatherDescription">
+            <h1 id="cityHeader"></h1>
+                <div id="weatherMain">
+                    <div id="temperature"></div>
+                        <div id="weatherDescriptionHeader"> </div>
+                            <div><img  id="documentIconIMG"></div>
+                       
+                    
+                </div>
+                <hr>
+                <div id="windSpeed" class="bottomDetails"></div>
+                <div id="humidity" class="bottomDetails"></div>
+            
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
