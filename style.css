@@ -17,7 +17,7 @@ body{
     border-radius: 10px;
     position: absolute;
     
-    /* visibility: hidden; */
+    visibility: hidden;
 
 }
 
@@ -67,4 +67,16 @@ body{
 #temperature{
     font-size: 38px;
     vertical-align: 25%;
+}
+
+.bottomDetails{
+
+    display: block;
+    font-size: 54px;
+    text-align: right;
+
+}
+
+hr{
+    margin-bottom: 20px;
 }

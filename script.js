@@ -67,9 +67,19 @@ function init(resultFromServer){
     humedityElement.innerHTML = 'La humedad es de: '+ resultFromServer.main.humidity+' %';
     cityHeader.innerHTML = resultFromServer.name;
 
-
+    
+    setPotitionForWeatherInfo();
 }
 
+function setPotitionForWeatherInfo(){
+    let weatherContainer = document.getElementById('weatherContainer');
+    let weatherContainerHeigth = weatherContainer.clientHeight;
+    let weatherContainerWidth = weatherContainer.clientWidth;
+
+    weatherContainer.style.left=`calc(50% - ${weatherContainerWidth/2}px)`;
+    weatherContainer.style.top=`calc(50% -${weatherContainerHeigth/1.3}px)`;
+    weatherContainer.style.visibility ='visible';
+}
 document.getElementById('seachbtn').addEventListener('click', () => {
     let searchTerm = document.getElementById('searchInput').value;
     if(searchTerm){
